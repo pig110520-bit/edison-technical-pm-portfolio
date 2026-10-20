@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>ProjectFlow — Project Case Study | Edison Chang</title>
+<meta content="ProjectFlow 專案管理平台：ASP.NET Core MVC、C#、SQL Server 的架構規劃、資料建模與功能開發案例。" name="description"/>
+<link href="../styles.css" rel="stylesheet"/>
+</head>
+<body><a class="skip-link" href="#main-content">跳至主要內容</a>
+<header class="header"><div class="wrap nav"><a class="logo" href="../index.html"><span class="logo-mark">e.</span><span>Edison Chang</span></a><nav class="navlinks"><a href="../index.html#work">Selected Work</a><a href="../index.html#about">About</a><a href="../index.html#skills">Capabilities</a><a href="#executive-summary">Case Summary</a></nav><div class="nav-right"><span class="small-status"><i class="status-dot"></i>Open to opportunities</span><a class="btn" href="../index.html#contact">Get in touch ↗</a></div></div></header>
+<main id="main-content">
+<section class="wrap case-head case-head-v4">
+<a class="back" href="../index.html#work">← Back to selected work</a>
+<div class="overline" style="margin-top:42px">01 / FEATURED CASE STUDY · PERSONAL PROJECT</div>
+<h1 class="case-title">One workspace.<br/><span class="v4-serif">Every moving part.</span></h1>
+<p class="case-lead"><strong>ProjectFlow</strong> — 從實際 PMO 管理需求出發，獨立規劃並透過 AI 協作開發專案管理系統，以 C#、ASP.NET Core MVC 與 SQL Server 串連工作分解、任務、工時、議題及進度資料。</p>
+<div class="case-tags"><span class="tag">Product &amp; Requirement Design</span><span class="tag">ASP.NET Core MVC</span><span class="tag">C#</span><span class="tag">SQL Server / EF Core</span></div>
+</section><section class="wrap v16-summary-section"><div class="overline">PERSONAL PROTOTYPE · NOT DEPLOYED</div><h2>一套把 WBS、任務與工時連起來的本機專案管理原型。</h2><p>從實際專案管理中分散的 Excel、工時與議題追蹤需求出發，由我定義業務規則與資料關係，透過 AI 協作開發 ASP.NET Core / SQL Server 原型並持續驗證。</p><div class="v16-impact-strip"><div><small>TESTS</small><strong>535 / 535</strong><span>截至 2026.10.14 的測試紀錄</span></div><div><small>EVIDENCE</small><strong>9 screens</strong><span>真實執行介面</span></div><div><small>STATUS</small><strong>Prototype</strong><span>未提供公司內部使用</span></div></div></section><section class="wrap case-section pm-executive" id="executive-summary">
+<div class="pm-exec-top"><div class="overline">CASE STUDY · THE 60-SECOND READ</div><a class="pm-skip" href="#deep-dive">Explore supporting evidence ↓</a></div>
+<h2>關鍵不是做了哪些功能，<br/>而是如何把問題推進到結果。</h2>
+<div class="pm-decision-grid">
+<article><span class="pm-kicker">01 / THE PROBLEM</span><h3>問題與限制</h3><p>WBS、任務、工時與議題分散在多份表格中，管理者不易追查任務進度與實際投入的關係。</p></article>
+<article><span class="pm-kicker">02 / MY ROLE</span><h3>我的責任</h3><p>自行定義需求、資料結構及主要業務計算規則，使用 AI 協作完成 C#／ASP.NET Core 與 SQL Server 本機原型並測試。</p></article>
+<article><span class="pm-kicker">03 / APPROACH</span><h3>處理方式與取捨</h3><p>以 Project → WBS → Task → Worklog 關聯建立資料流程；使用工時計算、加權進度與相依性檢查，並以自動化測試保護規則。</p></article>
+<article><span class="pm-kicker">04 / OUTCOME</span><h3>實際成果</h3><p>本機原型已有真實操作畫面，535／535 項測試通過；尚未部署或提供企業內部同仁使用，部分模組仍待全面驗收。</p></article>
+</div><p class="pm-evidence-note">535 項測試為已執行的自動化測試證據，不代表所有模組均已達企業正式上線標準。</p>
+</section>
+<div class="wrap">
+<figure class="v4-hero-stage">
+<div class="v4-stage-top"><span>PROJECTFLOW · INTERFACE CONCEPT</span><span>01 — DASHBOARD</span></div>
+<div class="v4-browser">
+<div class="v4-browser-bar"><span class="v4-dots"><i></i><i></i><i></i></span><span class="v4-url">projectflow / dashboard</span><span>⌕</span></div>
+<div class="v4-app">
+<aside class="v4-app-side"><strong>◈ projectflow</strong><small>WORKSPACE</small><div class="v4-app-active">▦   Overview</div><div>▤   Projects</div><div>▥   WBS</div><div>☑   Tasks</div><div>◷   Worklogs</div><div>◉   Issues &amp; risks</div><div>◇   Milestones</div><div class="v4-sidebar-foot">Personal development project</div></aside>
+<div class="v4-app-main">
+<div class="v4-ui-heading"><div><small>WORKSPACE / OVERVIEW</small><h3>Project overview</h3><p>Track what matters across every workstream.</p></div><span class="v4-ui-pill">●   Sample data</span></div>
+<div class="v4-kpis"><div><small>Active projects</small><b>04</b><em>Example</em></div><div><small>Open tasks</small><b>18</b><em>Example</em></div><div><small>Open issues</small><b>07</b><em>Example</em></div></div>
+<div class="v4-content-row"><div class="v4-graph"><div class="v4-charthead"><strong>Progress by workstream</strong><small>Illustrative</small></div><div class="v4-bars"><i style="--v:65%"></i><i style="--v:89%"></i><i style="--v:53%"></i><i style="--v:78%"></i><i style="--v:72%"></i><i style="--v:92%"></i><i style="--v:60%"></i></div><div class="v4-axis"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span></div></div><div class="v4-todo"><strong>Upcoming milestones</strong><div><span>01</span> Scope review <b>OCT</b></div><div><span>02</span> UAT planning <b>OCT</b></div><div><span>03</span> Release review <b>NOV</b></div></div></div>
+</div>
+</div>
+</div>
+<figcaption>介面概念重繪・依現有功能模組規劃，不是 ProjectFlow 的實際執行截圖。所有數據均為示例。</figcaption>
+</figure>
+<div class="case-facts">
+<div><label>PROJECT TYPE</label><strong>個人開發 / AI 協作開發</strong></div>
+<div><label>MY ROLE</label><strong>需求與規則設計、AI 協作實作、測試驗證</strong></div>
+<div><label>STATUS</label><strong>個人開發作品 · 功能持續驗證中</strong></div>
+</div>
+</div>
+<section class="wrap case-section v4-section-narrow" id="deep-dive">
+<div class="overline">01 / The challenge</div>
+<div class="v4-split"><h2>專案管理，不該是一份份彼此斷開的表格。</h2><div><p>專案的進度、任務、工時、里程碑與異常事項常分散管理。當任務更新時，對應的 WBS 與整體進度如何一致計算？當成員新增工時後，資訊如何回到任務與專案層級？</p><p>ProjectFlow 以這些實務問題為起點，嘗試建立具備可追溯資料結構的單一工作空間。</p></div></div>
+</section><section class="wrap case-section" id="real-screenshots">
+<div class="overline">10 / Working prototype · Actual screenshots</div>
+<h2>The actual system,<br/>not just a concept.</h2>
+<p>以下為從本機執行的 ProjectFlow 擷取的實際功能畫面，搭配開發測試資料。前面的 UI 概念圖用於作品集視覺展示，以下圖片則用來證明已實作的介面及操作流程。</p>
+<div class="pf-real-grid">
+<figure class="pf-real-item pf-real-featured"><a href="../assets/screenshots/dashboard.webp" rel="noopener" target="_blank"><img alt="ProjectFlow 真實 Dashboard 系統畫面，顯示專案數、平均進度、逾期任務與 Issue Risk 指標" loading="lazy" src="../assets/screenshots/dashboard.webp"/></a><figcaption><div><strong>01 / Project Dashboard</strong><span>實際操作畫面 · 管理總覽與 KPI</span></div><span class="pf-view">查看原圖 ↗</span></figcaption></figure>
+<figure class="pf-real-item"><a href="../assets/screenshots/project.webp" rel="noopener" target="_blank"><img alt="ProjectFlow 真實系統畫面：單一專案總覽，專案進度、WBS、任務與 Issue／Risk 的跨模組彙整" loading="lazy" src="../assets/screenshots/project.webp"/></a><figcaption><div><strong>02 / 單一專案總覽</strong><span>實際操作畫面 · 專案進度、WBS、任務與 Issue／Risk 的跨模組彙整</span></div><span class="pf-view">放大 ↗</span></figcaption></figure>
+<figure class="pf-real-item"><a href="../assets/screenshots/wbs.webp" rel="noopener" target="_blank"><img alt="ProjectFlow 真實系統畫面：WBS 工作分解，編號、預估／實際人天、進度與狀態管理" loading="lazy" src="../assets/screenshots/wbs.webp"/></a><figcaption><div><strong>03 / WBS 工作分解</strong><span>實際操作畫面 · 編號、預估／實際人天、進度與狀態管理</span></div><span class="pf-view">放大 ↗</span></figcaption></figure>
+<figure class="pf-real-item"><a href="../assets/screenshots/task.webp" rel="noopener" target="_blank"><img alt="ProjectFlow 真實系統畫面：Task 任務清單，任務狀態、優先度、進度、工時及期限" loading="lazy" src="../assets/screenshots/task.webp"/></a><figcaption><div><strong>04 / Task 任務清單</strong><span>實際操作畫面 · 任務狀態、優先度、進度、工時及期限</span></div><span class="pf-view">放大 ↗</span></figcaption></figure>
+<figure class="pf-real-item"><a href="../assets/screenshots/issue.webp" rel="noopener" target="_blank"><img alt="ProjectFlow 真實系統畫面：Issue 問題追蹤，問題分類、嚴重度、狀態與查詢篩選" loading="lazy" src="../assets/screenshots/issue.webp"/></a><figcaption><div><strong>05 / Issue 問題追蹤</strong><span>實際操作畫面 · 問題分類、嚴重度、狀態與查詢篩選</span></div><span class="pf-view">放大 ↗</span></figcaption></figure>
+<figure class="pf-real-item"><a href="../assets/screenshots/risk.webp" rel="noopener" target="_blank"><img alt="ProjectFlow 真實系統畫面：Risk 風險管理，影響 × 機率之分數、狀態與緩解方案" loading="lazy" src="../assets/screenshots/risk.webp"/></a><figcaption><div><strong>06 / Risk 風險管理</strong><span>實際操作畫面 · 影響 × 機率之分數、狀態與緩解方案</span></div><span class="pf-view">放大 ↗</span></figcaption></figure>
+<figure class="pf-real-item"><a href="../assets/screenshots/worklog.webp" rel="noopener" target="_blank"><img alt="ProjectFlow 真實系統畫面：Worklog 每日工時，工時累積、任務關聯、日期篩選與人天換算" loading="lazy" src="../assets/screenshots/worklog.webp"/></a><figcaption><div><strong>07 / Worklog 每日工時</strong><span>實際操作畫面 · 工時累積、任務關聯、日期篩選與人天換算</span></div><span class="pf-view">放大 ↗</span></figcaption></figure>
+<figure class="pf-real-item"><a href="../assets/screenshots/dependency.webp" rel="noopener" target="_blank"><img alt="ProjectFlow 真實系統畫面：Task Dependency，前置／後續任務、FS 關係與 Lag" loading="lazy" src="../assets/screenshots/dependency.webp"/></a><figcaption><div><strong>08 / Task Dependency</strong><span>實際操作畫面 · 前置／後續任務、FS 關係與 Lag</span></div><span class="pf-view">放大 ↗</span></figcaption></figure>
+<figure class="pf-real-item"><a href="../assets/screenshots/members.webp" rel="noopener" target="_blank"><img alt="ProjectFlow 真實系統畫面：專案成員與角色，成員狀態、角色與加入離開紀錄" loading="lazy" src="../assets/screenshots/members.webp"/></a><figcaption><div><strong>09 / 專案成員與角色</strong><span>實際操作畫面 · 成員狀態、角色與加入離開紀錄</span></div><span class="pf-view">放大 ↗</span></figcaption></figure>
+</div>
+<p class="pf-image-disclaimer">註：圖片為開發測試環境的真實截圖，內含示範或測試專案名稱及數據；不代表公司已部署、實際營運指標或生產環境的測試結果。</p>
+</section>
+<section class="wrap case-section">
+<div class="overline">02 / My contribution</div><h2>From requirement<br/>to implementation.</h2>
+<div class="v4-contribution-grid">
+<div><span>01</span><h3>需求拆解</h3><p>將專案、WBS、任務、工時、里程碑及風險管理需求拆分為可開發的功能模組。</p></div>
+<div><span>02</span><h3>資料建模</h3><p>規劃 Projects、WbsItems、ProjectTasks、Worklogs、Issues、Risks 等資料表及關聯。</p></div>
+<div><span>03</span><h3>系統開發</h3><p>以 AI 協作逐步實作 C#／ASP.NET Core MVC、EF Core 與 SQL Server；同步理解程式行為並驗證功能。</p></div>
+<div><span>04</span><h3>驗證迭代</h3><p>使用模擬資料驗證操作流程及計算邏輯，持續檢查跨專案驗證與資料彙整的一致性。</p></div>
+</div>
+</section>
+<section class="wrap case-section">
+<div class="overline">03 / Architecture</div><h2>看得到畫面，也看得到系統如何運作。</h2>
+<p>以下是依原始碼與模組規劃整理的簡化邏輯示意；不是部署環境的完整基礎架構。</p>
+<div class="v4-architecture">
+<div class="v4-arch-box"><small>USER INTERFACE</small><h3>ASP.NET Core MVC</h3><p>Dashboard · Projects · WBS · Tasks</p></div>
+<div class="v4-arch-arrow">↓<span>Controller / Service</span></div>
+<div class="v4-arch-box"><small>APPLICATION &amp; DATA ACCESS</small><h3>C# · Entity Framework Core</h3><p>需求驗證 · 模組流程 · 資料存取</p></div>
+<div class="v4-arch-arrow">↓<span>Query / Command</span></div>
+<div class="v4-arch-box"><small>PERSISTENCE &amp; DATA LOGIC</small><h3>SQL Server</h3><p>業務資料表 · Stored Procedures · Triggers</p></div>
+</div>
+<div class="v4-logic-notes"><div><strong>Worklogs → Task</strong><span>累計實際工時</span></div><div><strong>Task → WBS</strong><span>彙整工作分解進度</span></div><div><strong>WBS → Project</strong><span>回算專案進度</span></div></div>
+</section>
+<section class="wrap case-section">
+<div class="overline">08 / Selected modules</div><h2>Built around actual<br/>project workflows.</h2>
+<div class="v4-module-list">
+<div><span class="v4-index">A /</span><div><h3>WBS &amp; Task Management</h3><p>管理工作分解、任務關聯、負責人、進度與排程資訊。</p></div><span>Project structure ↗</span></div>
+<div><span class="v4-index">B /</span><div><h3>Worklog &amp; Progress Calculation</h3><p>將工時資料與任務、WBS、專案層級的彙整邏輯連接。</p></div><span>Data logic ↗</span></div>
+<div><span class="v4-index">C /</span><div><h3>Issues, Risks &amp; Change Requests</h3><p>建立議題、風險及變更紀錄的管理流程與資料關聯。</p></div><span>Governance ↗</span></div>
+<div><span class="v4-index">D /</span><div><h3>Permissions &amp; Testing</h3><p>逐步建立授權驗證及模組測試，提升系統可維護性。</p></div><span>Quality ↗</span></div>
+</div>
+</section>
+<section class="wrap case-section">
+<div class="overline">09 / UI design exploration</div>
+<h2>From source code to<br/>visible workflows.</h2>
+<p>依照這次提供的 ProjectFlow 原始碼（Dashboard、WBS、Tasks 的 Razor Views）整理欄位與介面結構，繪製公開展示用的概念畫面。與正式系統截圖不同，示例資料不代表實際營運或測試結果。</p>
+<div class="pf-visual-gallery">
+<figure><img alt="WBS 管理概念介面，含專案、WBS 編號、名稱、層級、預估人天、進度與狀態；非真實截圖" src="../assets/projectflow-wbs-concept.svg"/><figcaption><strong>WBS Management</strong><span>依 Wbs/Index.cshtml 欄位設計重繪的概念圖</span></figcaption></figure>
+<figure><img alt="任務管理概念介面，含專案、WBS、任務名稱、優先度、狀態與進度；非真實截圖" src="../assets/projectflow-tasks-concept.svg"/><figcaption><strong>Task Management</strong><span>依 ProjectTasks/Index.cshtml 欄位設計重繪的概念圖</span></figcaption></figure>
+<figure class="wide"><img alt="工時紀錄到任務、WBS 和專案進度的概念資料流" src="../assets/projectflow-dataflow.svg"/><figcaption><strong>Progress Roll-up Logic</strong><span>工時與進度的資料流示意，非正式部署拓樸</span></figcaption></figure>
+</div>
+</section>
+<section class="wrap case-section">
+<div class="overline">11 / Evidence &amp; status</div><h2>展示真實進度，<br/>不把未完成寫成成果。</h2>
+<div class="v4-evidence">
+<div class="v4-evidence-card"><span>AVAILABLE</span><h3>原始碼與資料模型</h3><p>現有專案包含 MVC Controller / View、資料存取層、SQL 邏輯及多個單元測試檔案。</p></div>
+<div class="v4-evidence-card"><span>DEVELOPMENT STATUS</span><h3>本機原型持續驗證中</h3><p>目前使用測試專案、人員及任務資料進行開發與功能驗證，尚未正式釋出或提供公司使用；2026/10/14 自動化測試 535/535 PASS，持續補充邊界情境驗證。</p></div>
+<div class="v4-evidence-card"><span>VERIFIED VISUALS</span><h3>9 張真實系統截圖</h3><p>已整合 Dashboard、專案、WBS、Tasks、Issue、Risk、Worklogs、相依關係及成員管理的實際畫面，資料為測試用途。</p></div>
+</div>
+<p class="v4-fineprint">作品狀態：個人開發中的 Prototype，非正式企業部署成果。設計示意圖採用虛構資料；實際截圖來自本機測試環境，其數字不代表營運績效。</p>
+</section>
+<section class="wrap case-section v15-focus"><div class="overline">IMPLEMENTATION STATUS / OCTOBER 2026</div><h2>Prototype, not<br/><em>an internal deployment.</em></h2><div class="v15-module-grid"><article><strong>Core features implemented</strong><p>Project、WBS、Task、Worklog、Dependency 的主要功能與對應業務規則已實作。</p></article><article><strong>Further module acceptance required</strong><p>Issue、Risk、Members 已有實作，但尚未逐項完成最新一輪的完整功能驗收。</p></article><article><strong>Automated verification</strong><p>2026/10/14：535 項自動化測試全數通過（516 unit + 19 integration）；不表示所有使用情境已測完。</p></article><article><strong>Usage status</strong><p>個人 AI 協作開發原型，尚未提供公司內部人員使用，也未正式部署至企業環境。</p></article></div><p class="v15-caption">此作品重點是需求、資料關聯、業務規則、技術設計取捨及測試證據；不宣稱獨立手寫全部 C# 程式碼。</p></section><details class="wrap v16-tech-details"><summary>展開進階技術細節：WBS、工時、資料規則、SQL 與驗證</summary><section class="wrap case-section pf-deep-dive" id="business-rules">
+<div class="overline">04 / Business rule design · Personal design decisions</div>
+<h2>Not just CRUD.<br/><span class="v4-serif">Rules behind each workflow.</span></h2>
+<p>ProjectFlow 的出發點不是先建立畫面，而是把過去在多工作表管理 WBS、任務、人員與工時的經驗，轉換為明確的資料關係及業務規則。以下列出設計原則；實作完成度與最新版 SQL 仍須分別驗證。</p>
+<div class="pf-rule-cards">
+<article><span>01 / HIERARCHY</span><h3>Hierarchical WBS</h3><p>採用 Parent–Child 結構，讓不同深度的工作分解共用同一套 WBS 資料模型。</p><div class="pf-rule-snippet">Project → WBS → Sub-WBS</div><p><strong>主要規則：</strong>父子節點必須屬於同一專案；禁止自己成為父節點、形成循環，刪除前檢查相依資料。</p></article>
+<article><span>02 / PROJECT SCOPE</span><h3>Task–WBS Association</h3><p>WBS 負責組織工作範圍，Task 負責實際執行、指派、工時與進度。</p><div class="pf-rule-snippet">Task.ProjectId = WBS.ProjectId</div><p><strong>主要規則：</strong>選定專案才載入對應 WBS；後端仍須防止竄改 Request 導致跨專案掛載。</p></article>
+<article><span>03 / ROLE TRANSITION</span><h3>Project Manager Handover</h3><p>規劃新增人員、修改角色、離開與重新加入，以及專案 PM 更換的確認機制。</p><div class="pf-rule-snippet">New PM → ProjectManager<br/>Previous PM → ProjectMember</div><p><strong>主要規則：</strong>若已有 PM，先詢問是否更換，避免意外產生角色衝突。此處為初始業務流程規劃。</p></article>
+</div>
+</section><section class="wrap case-section pf-deep-dive">
+<div class="overline">05 / Progress &amp; effort design</div>
+<h2>From worklogs<br/><span class="v4-serif">to project visibility.</span></h2>
+<p>規劃由底層工時紀錄彙總 Task、WBS 和 Project 的管理資訊，避免每個 Controller 各自維護不同的計算邏輯。以下示範最初規劃的公式，不代表最新版 SQL 所有階層與邊界案例皆已完成驗證。</p>
+<div class="pf-math-layout">
+<div class="pf-math-card"><span>01 / ACTUAL EFFORT</span><h3>Task actual hours</h3><div class="pf-math">ActualHour = Σ Worklog.Hours</div><p>以每天填報的工時為唯一來源。例如 8 + 6 + 10 = 24 小時；按 8 小時換算為 3 人天。</p></div>
+<div class="pf-math-card"><span>02 / PLANNED WEIGHT</span><h3>Weighted progress</h3><div class="pf-math">Progress = Σ (EstimatedHour × Progress) / Σ EstimatedHour</div><p>若任務 A 為 80h／50%，任務 B 為 20h／0%，加權進度為 40%，而不是直接平均的 25%。</p></div>
+</div>
+<div class="pf-logic-chain"><div><strong>Worklogs</strong><small>Hours</small></div><span>→</span><div><strong>Tasks</strong><small>ActualHour</small></div><span>→</span><div><strong>WBS</strong><small>ActualManDay / Progress</small></div><span>→</span><div><strong>Projects</strong><small>Progress</small></div></div>
+<p class="pf-rule-footnote">注意：實際工時彙總與進度加權是不同規則；投入 24 小時不代表工作進度自動達到 100%。父子 WBS 的遞迴加權與零權重處理，以最終 SQL 驗證結果為準。</p>
+</section><section class="wrap case-section pf-deep-dive">
+<div class="overline">06 / AI-assisted implementation</div>
+<h2>I defined the rules.<br/><span class="v4-serif">AI helped build the code.</span></h2>
+<p>這是個人透過 AI 協作開發的學習型專案。我熟悉專案管理場景與 SQL 資料邏輯，但 C#／ASP.NET Core 是開發過程中逐步理解的技術；不將自己描述為資深 C# 工程師，也不把 AI 產生的程式碼宣稱全部親自手寫。</p>
+<div class="pf-rule-cards pf-rule-cards-ai">
+<article><span>01 / INPUT</span><h3>Requirement &amp; rule definition</h3><p>由我提出 WBS 階層、Task 歸屬、角色轉換、工時及進度規則與預期操作流程。</p></article>
+<article><span>02 / CO-BUILD</span><h3>AI-assisted coding</h3><p>藉由 AI 協助產生、解釋與修改 MVC、C#、EF Core 和 SQL 實作，反覆對照規格調整。</p></article>
+<article><span>03 / REVIEW</span><h3>Functional verification</h3><p>使用假資料操作介面、核對資料關聯與計算結果，回饋問題並持續測試與修正。</p></article>
+</div>
+</section><section class="wrap case-section pf-deep-dive" id="testing-iteration">
+<div class="overline">07 / Testing &amp; iteration · Verified 2026-10-14</div>
+<h2>Business rules,<br/><span class="v4-serif">verified by tests.</span></h2>
+<p>以 .NET 8 / xUnit 執行自動化測試，並以實際操作及 SQL 結果核對 Task → WBS → Project 的加權進度。兩份 TRX 測試報告已核對，均無失敗或未執行項目。</p>
+<div class="pf-verified-metrics"><div><strong>516</strong><span>Unit tests passed</span></div><div><strong>19</strong><span>Integration tests passed</span></div><div><strong>535 / 535</strong><span>Passed · Failed 0 · Skipped 0</span></div></div>
+<div class="pf-verification-table"><div class="pf-vrow"><strong>Progress aggregation</strong><span>Task 50% → 100%; WBS 70% → 100%; Project 23.33% → 33.33%</span><b>PASS*</b></div><div class="pf-vrow"><strong>Cross-project WBS</strong><span>Controller Create / Edit validation tests rejected foreign-project WBS association</span><b>PASS</b></div><div class="pf-vrow"><strong>Worklog aggregation</strong><span>24 hours = 3 man-days; SQL integration test passed</span><b>PASS</b></div></div>
+<p class="pf-rule-footnote">*單層 WBS 進度範例；尚不代表已驗證父子 WBS 遞迴。535/535 是此次自動化測試通過數量，不等於 100% 程式碼覆蓋率或正式環境部署。測試摘要已整理於本頁；完整測試執行檔與內部紀錄不隨公開網站發布。</p>
+<div class="pf-iteration-story"><div><span>INITIAL DESIGN</span><h3>Stored Procedures + Triggers</h3><p>以資料庫計算維護實際工時與進度，降低不同頁面重複運算的不一致風險。</p></div><div><span>ENGINEERING ISSUE</span><h3>Concurrency &amp; locking</h3><p>開發期間曾回報整合測試並行執行出現 SQL Server deadlock；TRX 僅能證明調整後這次測試全數通過，不能單獨證明既往失敗原因。</p></div><div><span>ITERATION</span><h3>Controlled test execution</h3><p>針對 Worklog 測試採用 xUnit collection 管理並行執行；保留 SQL 更新責任、鎖定行為與效能的後續檢查。</p></div></div>
+</section></details><div class="wrap case-next"><strong>Explore more work.</strong><a href="../index.html#work">View all projects ↗</a></div>
+</main>
+<footer class="footer" id="contact"><div class="wrap"><div class="footer-label">LET'S CONNECT / 2026</div><h2 class="footer-big">Let's build something<br/><em>meaningful.</em></h2><div class="footer-actions"><a aria-label="寄送求職聯絡 Email 至 s096647@yahoo.com.tw" class="btn btn-outline" href="mailto:s096647@yahoo.com.tw">Email · s096647@yahoo.com.tw ↗</a><a class="btn btn-outline" href="../index.html#work">View selected work ↗</a></div><div class="footer-row"><span>© 2026 Edison Chang · Technical PM Portfolio</span><span>繁體中文內容 · 部分企業專案匿名化展示</span></div></div></footer>
+</body></html>

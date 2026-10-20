@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690" role="img" aria-label="匿名禮券核銷資料流程概念圖">
+<defs><style>text{font-family:'Noto Sans TC','Microsoft JhengHei',Arial,sans-serif}.h{font-size:38px;font-weight:700;fill:#202d29}.sub{font-size:16px;fill:#65766b}.unit{font-size:23px;font-weight:700;fill:#25322a}.small{font-size:16px;fill:#5c6c61}.num{font-size:13px;font-weight:700;letter-spacing:2px;fill:#6f836e}</style><marker id="arr" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#748b7a" stroke-width="1.5"/></marker></defs>
+<rect width="1200" height="690" rx="28" fill="#e8eee6"/>
+<text x="65" y="75" class="num">ANONYMIZED SYSTEM INTEGRATION / CASE 02</text><text x="65" y="125" class="h">Voucher redemption, connected.</text><text x="65" y="162" class="sub">系統概念重繪 · 不代表正式部署拓樸或原始資料結構</text>
+<rect x="65" y="225" width="294" height="184" rx="17" fill="#fff" stroke="#d6dfd4"/>
+<text x="88" y="259" class="num">BACK-OFFICE</text><text x="88" y="315" class="unit">序號與狀態管理</text><text x="88" y="357" class="small">建立可供查詢的有效性資料</text><text x="88" y="384" class="small">與序號狀態</text>
+<rect x="453" y="225" width="294" height="184" rx="17" fill="#2e483a"/>
+<text x="478" y="259" font-size="13" font-weight="700" letter-spacing="2" fill="#c0deba">POINT OF SALE</text><text x="478" y="315" font-size="23" font-weight="700" fill="#fff">POS 查詢與核銷</text><text x="478" y="357" font-size="16" fill="#d3e1d6">檢核可使用資格</text><text x="478" y="384" font-size="16" fill="#d3e1d6">完成門市核銷流程</text>
+<rect x="841" y="225" width="294" height="184" rx="17" fill="#fff" stroke="#d6dfd4"/>
+<text x="865" y="259" class="num">INTEGRATION</text><text x="865" y="315" class="unit">中介與同步作業</text><text x="865" y="357" class="small">接收核銷結果</text><text x="865" y="384" class="small">排程回寫後端狀態</text>
+<path d="M360 309 H444" stroke="#748b7a" stroke-width="2" marker-end="url(#arr)"/><path d="M748 309 H832" stroke="#748b7a" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="65" y="468" width="1070" height="132" rx="15" fill="#f7faf5" stroke="#d2dcd0"/>
+<text x="90" y="505" class="num">LOGICAL DATA FLOW</text>
+<text x="90" y="543" class="small">① 查詢可用序號</text><text x="355" y="543" class="small">② POS 完成核銷</text><text x="630" y="543" class="small">③ 中介接收結果</text><text x="912" y="543" class="small">④ 排程同步狀態</text>
+<text x="65" y="649" class="sub">Portfolio reconstruction · All labels and visual elements are illustrative, not internal system artifacts.</text>
+</svg>

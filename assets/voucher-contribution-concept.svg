@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-label="禮券整合功能責任及資料流概念圖">
+<defs><style>text{font-family:'Noto Sans TC','Microsoft JhengHei',Arial,sans-serif}.t{font-size:35px;font-weight:700;fill:#28392d}.small{font-size:15px;fill:#58695c}.head{font-size:19px;font-weight:700;fill:#293d30}.label{font-size:12px;letter-spacing:2px;font-weight:700;fill:#65836b}</style><marker id="end" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0 0 L7 3 L0 6" fill="none" stroke="#809883" stroke-width="2"/></marker></defs>
+<rect width="1200" height="660" rx="25" fill="#f2efea"/>
+<text x="60" y="70" class="label">REQUIREMENT → IMPLEMENTATION → VERIFICATION</text><text x="60" y="114" class="t">Making a reliable redemption flow.</text>
+<rect x="60" y="168" width="330" height="340" rx="16" fill="#fff" stroke="#e3ded7"/>
+<rect x="435" y="168" width="330" height="340" rx="16" fill="#f9fbf7" stroke="#d8e3d5"/>
+<rect x="810" y="168" width="330" height="340" rx="16" fill="#fff" stroke="#e3ded7"/>
+<text x="83" y="210" class="label">01 / REQUIREMENTS</text><text x="83" y="251" class="head">作業規格與狀態規則</text>
+<text x="83" y="313" class="small">• 序號資格查詢</text><text x="83" y="354" class="small">• 核銷後狀態處理</text><text x="83" y="395" class="small">• 異常及流程條件</text><text x="83" y="436" class="small">• 跨系統資料流定義</text>
+<text x="458" y="210" class="label">02 / IMPLEMENTATION</text><text x="458" y="251" class="head">資料庫查詢與處理邏輯</text>
+<text x="458" y="313" class="small">• SQL View</text><text x="458" y="354" class="small">• Stored Procedure</text><text x="458" y="395" class="small">• Trigger</text><text x="458" y="436" class="small">• 中介資料狀態處理</text>
+<text x="833" y="210" class="label">03 / DELIVERY</text><text x="833" y="251" class="head">整合測試與營運交付</text>
+<text x="833" y="313" class="small">• POS 功能整合驗證</text><text x="833" y="354" class="small">• 核銷情境測試協作</text><text x="833" y="395" class="small">• 結果回壓與同步驗證</text><text x="833" y="436" class="small">• 已投入實際營運</text>
+<path d="M393 326 H428" stroke="#809883" stroke-width="3" marker-end="url(#end)"/><path d="M768 326 H803" stroke="#809883" stroke-width="3" marker-end="url(#end)"/>
+<text x="60" y="573" class="small">匿名作品案例 · 僅呈現可公開的工作範疇，不提供客戶名稱、正式資料庫名稱、內部接口或交易資料</text>
+</svg>
