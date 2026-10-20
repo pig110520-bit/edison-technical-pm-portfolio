@@ -94,15 +94,3 @@ img{max-width:100%}
 .pending-contact{opacity:.7;cursor:default;pointer-events:none;}
 
 /* Mobile spacing refinement — 2026-10-20
-   Keep section headings and body text away from the phone screen edge.
-   Desktop layouts are unchanged. */
-@media (max-width: 760px) {
-  .wrap { padding-left: 24px; padding-right: 24px; }
-  .pm-executive { padding-left: 24px !important; padding-right: 24px !important; }
-  .pm-decision-grid article, .pm-home-brief-grid > div { padding-left: 20px; padding-right: 20px; }
-  .case-title, .hero-title, .section-title, .case-section h2, .pm-executive h2 { overflow-wrap: anywhere; }
-}
-@media (max-width: 390px) {
-  .wrap { padding-left: 20px; padding-right: 20px; }
-  .pm-executive { padding-left: 20px !important; padding-right: 20px !important; }
-}
