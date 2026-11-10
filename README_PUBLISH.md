@@ -1,13 +1,18 @@
-# Edison Technical PM Portfolio — GitHub Pages
+# Edison Portfolio V20 完整修復包
 
-這是供 GitHub Pages 發布的靜態網站。將此資料夾**內的檔案**放在 Repository 根目錄；`index.html` 必須在根目錄。
+## 出現頁面打不開、圖片不顯示的原因
+V20 的「僅更新 5 個檔案」不是完整網站，其中多個頁面引用 `assets/screenshots/`、`assets/automation-evidence/` 等子目錄。如果曾只上傳更新包或上傳時失去子資料夾階層，頁面會缺圖片或樣式。本完整修復包已包含所有網頁、CSS、圖檔、PDF 及健康檢查頁。
 
-- GitHub: https://github.com/pig110520-bit/edison-technical-pm-portfolio
-- 預期網址: https://pig110520-bit.github.io/edison-technical-pm-portfolio/ （尚須啟用 Pages）
-- 聯絡 Email: s096647@yahoo.com.tw
+## 上傳前確認
+- **請解壓縮 ZIP，再將解壓縮後的內容上傳到 GitHub Repository 的根目錄（main 分支）。**
+- GitHub 根目錄需直接看到 `index.html`、`styles.css`、`resume.html`、`site-check.html`、`assets/`、`projects/`。
+- **不能把 ZIP 本身上傳，也不能多套一層 `Edison_Portfolio_V20_Complete_Repair` 目錄。**
+- `projects` 資料夾需要有四個 HTML，`assets` 裡需包含 `screenshots/` 與 `automation-evidence/`。
+- 為避免遺漏資料夾，建議從 Windows 檔案總管**一次拖曳解壓縮後的所有檔案及資料夾**到 GitHub 的 Upload files 畫面；確認檔案清單包含 `assets/screenshots/dashboard.webp` 等路徑，再 Commit。
 
-## GitHub Pages 設定
-Repository Settings → Pages → Deploy from a branch → main → /(root) → Save。
+## 發布後檢查
+打開 `https://pig110520-bit.github.io/edison-technical-pm-portfolio/site-check.html`，檢查是否全部正常。
+請另外測試四個專頁以及手機版排版。若出現「缺少」請截圖健康檢查頁。
 
-## 公開前提醒
-Automation GUI 保留實際操作畫面，已以**像素覆寫**遮蔽可辨識的 Windows 路徑及作業代碼；其他畫面中的業務內容仍需要由素材權利人與公司政策角度審核。ProjectFlow 圖片為使用者確認的虛擬測試資料。舊公司機器人影片和相片不含在此包。
+## 注意
+已保留原先作品集 V20 的業務敘述與素材，僅將版本打包成完整可上傳站點並加上健康檢查頁。不保證已能讀取目前 GitHub 的遠端實際檔案；若站點仍錯，需查看 GitHub Repository 的實際資料夾位置。
